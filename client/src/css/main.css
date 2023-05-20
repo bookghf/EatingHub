@@ -1,0 +1,89 @@
+.app {
+  min-width: 480px;
+}
+
+.content-container{
+  height:max-content;
+  width: 100%;
+  background-color:#E0E0E0;
+  display:flex;
+  justify-content: center;
+}
+.content{
+  height:max-content;
+  width: 100%;
+  max-width: 1200px;
+  background-color:#E0E0E0;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+.shopCard {
+  color: black;
+}
+.shopCard a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.changeItem{
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.changeItemButton{
+  width: 83% ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.set{
+  color: #ffffff;
+  background-color: #134b8a;
+  cursor: pointer;
+  width: 10%;
+  max-width: 111px;
+  height: 30px;
+  border-radius: 50px;
+  
+}
+
+.set:hover {
+  color: #ffffff;
+  background-color: #0f1e56;
+}
+
+.none{
+  display: none;
+}
+
+@media only screen and (max-width: 515px) {
+  .content-container{
+    padding-bottom: 150px;
+  }
+  .changeItem{
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    display: flex;
+    justify-content: right;
+  }
+  .changeItemButton{
+    width: 83% ;
+    display: flex;
+    justify-content: right;
+  }
+  
+  .set{
+    color: #ffffff;
+    background-color: #134b8a;
+    cursor: pointer;
+    width: 10%;
+    height: 30px;
+    border-radius: 50px;
+    margin: 0 5px;
+  }
+
+}

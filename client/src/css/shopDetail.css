@@ -1,0 +1,251 @@
+*{
+    margin:0 ;
+    padding: 0;
+}
+.none{
+    display: none;
+}
+body{
+    font-family: "Webly Sleek SemiLight", Helvetica-, droid sans, sans-serif;
+    font-weight: normal;
+    /* background-color: #ffffff; */
+}
+.shopDetail{
+    height: auto;
+    width:auto;
+    background-color: #ffffff;
+    justify-content:center;
+}
+.button-container{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content:left;
+    align-items: center;  
+    margin: auto;
+    margin-left: 30px;
+}
+button.back{
+    height: 30px;
+    width: 70px;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #134b8a;
+}
+button.back:hover{
+    background-color: #0f1e56;
+    cursor: pointer;
+}
+.big-container{
+    height: max-content;
+    width: 85%;
+    min-width: 350px;
+    background-color: #c3d4e9;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.small-container{
+    height: 95%;
+    width: 95%;
+    margin: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.des-container{
+    height: 70%;
+    width: 55%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.large-photo{
+    height: 50%;
+    width: 100%;
+}
+
+.large-photo img{
+    object-fit:cover;
+    height:100%;
+    max-height: 400px;
+    width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.description-area{
+    width: 100%;
+    height: 50%;
+    margin: 20px auto;
+}
+
+.nameAndrating {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop_name{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    padding-left: 5%;
+    align-items: center;
+}
+.shop_name p{
+    width: auto;
+    height: auto;
+    font-size: 19px;
+    font-weight:600;
+    padding: 0;
+    margin: 0;
+}
+.shop_rate{
+    width: 20%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 5%;
+}
+.shop_rate li{
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    color: #0202a2;
+    font-weight: 600;
+    list-style: style circle;
+}
+
+.addressAndtime {
+    width: 100%;
+    height: 80%;
+    font-size: 12px;
+}
+
+.address{
+    width: 90%;
+    height: 30%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.d1{
+    width:30%;
+}
+.d1 p{
+    font-weight: bold;
+}
+.d2{
+    width:70%;
+    display: block;
+}
+
+.d2 p{
+    height: 10%;
+    margin: 0 0 3px;
+}
+
+.openTime{
+    width: 90%;
+    height: 70%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container{
+    height: 95%;
+    width: 40%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.image-des{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.image-des p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.photo-box{
+    width:90%;
+    height:80%;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.img-sample{
+    width:100%;
+    height:33%;
+}
+
+.img-sample img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .small-container{
+        display: block;
+    }
+    .des-container{
+        width: 100%;
+    }
+    .image-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nameAndrating{
+        margin-bottom: 10px;
+        display: block;
+    }
+    .shop_rate{
+        margin-top: 10px;
+    }
+    .address{
+        display: block;
+    }
+    .d1{
+        font-size: 20px;
+        width: 100%;
+    }
+    .d2{
+        width: 100%;
+        margin-left: 4px;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    .openTime{
+        display: block;
+    }
+}

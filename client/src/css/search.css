@@ -1,0 +1,360 @@
+/* Pulling in reset css and fonts http://seodesigns.com/projects/TD/css/reset.css */
+body {
+    background: #E0E0E0;
+}
+
+
+p {
+    font-family: "Webly Sleek SemiLight", Helvetica-, droid sans, sans-serif;
+    font-weight: normal;
+    margin: 0 0 1rem;
+}
+
+.search {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerbox {
+    width: max-content;
+    min-height: 52px;
+}
+
+
+.main-form-container {
+    height: 50px;
+    width: 100%;
+}
+
+.sform {
+    position: relative;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.centerbox h1 {
+    margin-bottom: 25px;
+    font-size: 36px;
+    font-family: "Webly Sleek SemiLight";
+    font-weight: normal;
+    text-align: center;
+}
+
+.centerbox p.description {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.search-description p {
+    text-decoration: none;
+}
+
+.main-input {
+    background: #fff;
+    height: 50px;
+    width: 327px;
+    color: #a7b1ab;
+    border: 1px solid #cccccc;
+    margin-bottom: 0px;
+    border-radius: 4px 0px 0px 4px;
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 0px 0px 57px;
+    font-size: 16px;
+    border-right: 0px;
+    background: #ffffff url("http://seodesigns.com/projects/TD/images/search.png") 18px 15px no-repeat;
+    background-size: 18px 18px;
+}
+
+#main-submit {
+    background: #3cb13c;
+    color: #fff;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 0px;
+    border-radius: 0px 4px 4px 0px;
+    width: 141px;
+    height: 50px;
+    border: 0px;
+    padding-top: 0px;
+}
+
+#main-submit:hover {
+    background: #00a221;
+    color: #fff !important;
+    /* -webkit-appearance: none; */
+}
+
+#main-submit-mobile {
+    display: none;
+}
+
+footer {
+    border-top: 0px;
+}
+
+.main-btn {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    padding: 0px;
+    border-right: 0px;
+    background: #ffffff url("http://seodesigns.com/projects/TD/images/main-bullet.png") 122px 23px no-repeat;
+    background-size: 6px 6px;
+    cursor: pointer;
+}
+
+ul.search-description {
+    position: absolute;
+    left: 385px;
+    top: 51px;
+    height: auto;
+    width: 150px;
+    background: #fff;
+    border-radius: 2px;
+    padding: 14px 0px;
+    border: 1px solid #E5E5E5;
+    display: inline-block;
+    margin:auto;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.search-description li {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    color: #4A4A4A;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+
+.search-description li:hover {
+    background: #f8f8f8;
+}
+
+.search-small {
+    font-size: 12px;
+    margin: 0px;
+    color: #9B9B9B;
+    position: absolute;
+    top: 6px;
+    left: 16px;
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    text-align: left;
+}
+
+.search-large {
+    font-size: 16px;
+    margin: 0px;
+    color: #4A4A4A;
+    position: absolute;
+    top: 19px;
+    left: 16px;
+    display: inline-block;
+    width: 105px;
+    height: 20px;
+    font-weight: 900;
+    text-align: left;
+}
+
+
+/* responsive css below */
+@media only screen and (max-width: 680px) {
+    .main-btn {
+        border-radius: 0px 4px 4px 0px;
+        border-right: 1px solid #cccccc;
+    }
+
+    .centerbox {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        bottom: 48px;
+        z-index: 10;
+    }
+
+    .main-form-container {
+        width: 100%;
+        height: auto;
+    }
+    .dropbox{
+        position: relative;
+        z-index: 5;
+    }
+    ul.search-description {
+        top: 0;
+        left: 0;
+        width: 150px;
+        background: #fff;
+        border-radius: 2px;
+        border: 1px solid #E5E5E5;
+        transform: translate(0,-100%);
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+        z-index: 20;
+    }
+
+    .search-description li {
+        font-size: 16px;
+        color: #4A4A4A;
+        font-weight: 900;
+        padding: 6px 0px;
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        z-index: 30;
+    }
+
+    #main-submit {
+        display: none;
+    }
+
+    #main-submit-mobile {
+        background: #3cb13c;
+        color: #fff;
+        display: block;
+        font-size: 19px;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 0px;
+        border-radius: 0px;
+        width: 141px;
+        height: 50px;
+        border: 0px;
+        padding-top: 0px;
+        float: none;
+        border: 0px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #main-submit-mobile:hover {
+        background: #00a221;
+        color: #fff !important;
+    }
+    .main-input {
+        width: 75%;
+    }
+
+    footer {
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .centerbox {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        bottom: 48px;
+        left: 0;
+        z-index: 10;
+    }
+
+    form.sform {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-form-container {
+        width: 100%;
+        height: auto;
+    }
+    .dropbox{
+        width: 25%;
+        position: absolute;
+        z-index: 5;
+        top:0;
+    }
+    .main-input {
+        width: 93%;
+        padding-left: 7%;
+        background: #ffffff;
+    }
+    .main-btn {
+        position: absolute;
+        border-radius: 0px 4px 4px 0px;
+        border-right: 1px solid #cccccc;
+        transform: translateY(-100%);
+    }
+    ul.search-description {
+        top: 0;
+        left: 0;
+        width: 148px;
+        background: #fff;
+        border-radius: 2px;
+        border: 1px solid #E5E5E5;
+        transform: translateY(-118%);
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+        z-index: 20;
+    }
+
+    .search-description li {
+        font-size: 16px;
+        color: #4A4A4A;
+        font-weight: 900;
+        padding: 6px 0px;
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        z-index: 30;
+    }
+
+    #main-submit {
+        display: none;
+    }
+
+    #main-submit-mobile {
+        background: #3cb13c;
+        color: #fff;
+        display: block;
+        font-size: 19px;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 0px;
+        border-radius: 0px;
+        height: 50px;
+        border: 0px;
+        padding-top: 0px;
+        float: none;
+        border: 0px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #main-submit-mobile:hover {
+        background: #00a221;
+        color: #fff !important;
+    }
+
+    footer {
+        padding-bottom: 50px;
+    }
+}
+

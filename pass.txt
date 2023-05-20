@@ -1,0 +1,1 @@
+"mongodb+srv://bookghf:<book1234>@cluster0.fsmhwxf.mongodb.net/?retryWrites=true&w=majority"
